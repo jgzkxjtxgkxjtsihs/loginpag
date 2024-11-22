@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Login Core</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sci-fi-background">
+        <div class="hexagon-grid"></div>
+    </div>
+    <div class="login-container">
+        <div class="core-circle"></div>
+        <div class="core-ring"></div>
+        <div class="digital-rain"></div>
+        <form id="loginForm" class="login-form">
+            <h2><span class="sci-fi-text">SYSTEM LOGIN</span></h2>
+            <div class="scan-line"></div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">USER ID</label>
+                <div class="input-border"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" required>
+                <label for="password">ACCESS CODE</label>
+                <div class="input-border"></div>
+            </div>
+            <div class="form-group">
+                <label class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <span class="checkmark"></span>
+                    MAINTAIN CONNECTION
+                </label>
+                <a href="#" class="forgot-password">RESET ACCESS</a>
+            </div>
+            <button type="submit">INITIALIZE LOGIN</button>
+            <p class="signup-link">REQUEST NEW ACCESS? <a href="#">REGISTER</a></p>
+            <div class="loading-container" style="display: none;">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+                <div class="loading-text">SYSTEM AUTHENTICATION IN PROGRESS</div>
+            </div>
+            <div class="chatbot" style="display: none;">
+                <div class="chatbot-header">AI Assistant</div>
+                <div class="chatbot-messages" id="chatbotMessages"></div>
+                <div class="chatbot-input-container" style="display: none;">
+                    <input type="text" id="userInput" placeholder="Type your message..." />
+                </div>
+            </div>
+            <div class="membership-options" style="display: none;">
+                <h3>Choose Your Option</h3>
+                <div class="option" id="membershipOption">
+                    <button>Membership</button>
+                </div>
+                <div class="option" id="soloOption">
+                    <button>Solo</button>
+                </div>
+            </div>
+            <div class="vip-ticket" style="display: none;">
+                <div class="ticket-header">VIP Gold Ticket</div>
+                <div class="ticket-content">
+                    <p>Congratulations! You are now a VIP member.</p>
+                    <p>Your exclusive benefits include:</p>
+                    <ul>
+                        <li>Priority Support</li>
+                        <li>Exclusive Access to Events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sci-fi-monitor" style="display: none;">
+                <div class="monitor-screen">
+                    <h3>Welcome to the Sci-Fi Monitor</h3>
+                    <div class="monitor-content" id="monitorContent">
+                        <p>Initializing...</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
